@@ -10,6 +10,6 @@ version="${version#\'}"
 
 tag="$name:$version"
 
-echo "Building image:\t$tag"
+echo "Building image: $tag"
 
 docker build -t $tag --build-arg name="$name" --build-arg version="$version" .
